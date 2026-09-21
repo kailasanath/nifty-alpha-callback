@@ -4,10 +4,134 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NIFTY Alpha</title>
+  <meta
+    name="description"
+    content="NIFTY Alpha is a local-first NIFTY 50 options decision-support application with manual trade execution."
+  >
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e8ecf5;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    .card {
+      background: #121a2b;
+      border: 1px solid #26314a;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 42px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #b8c2d8;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #1b2740;
+      border: 1px solid #334263;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: #7f8ca8;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>NIFTY Alpha</h1>
-  <p>Authentication callback endpoint.</p>
-  <p>You may close this page.</p>
+  <main class="container">
+    <section class="card">
+      <h1>NIFTY Alpha</h1>
+      <p>
+        NIFTY Alpha is a local-first decision-support application for
+        NIFTY 50 index options research and manual trading workflows.
+      </p>
+
+      <span class="badge">NIFTY 50</span>
+      <span class="badge">Options Analysis</span>
+      <span class="badge">Manual Execution</span>
+      <span class="badge">Local-First</span>
+    </section>
+
+    <section class="card">
+      <h2>What NIFTY Alpha Does</h2>
+      <p>
+        The application analyzes market conditions, option contracts,
+        risk-reward structure, expiry selection, and data quality to
+        produce rule-based decision support.
+      </p>
+
+      <p>
+        NIFTY Alpha does not automatically place broker orders.
+        Trade execution remains fully manual.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Broker API Integration</h2>
+      <p>
+        NIFTY Alpha can connect to supported broker APIs for
+        authentication and market-data access.
+      </p>
+
+      <p>
+        Broker credentials, access tokens, PINs, TOTP secrets, and
+        account information are never stored on this website.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Authentication Callback</h2>
+      <p>
+        This page may be used as a registered HTTPS callback or redirect
+        endpoint for supported broker API integrations.
+      </p>
+
+      <p>
+        No sensitive authentication data is intentionally collected or
+        transmitted by this static page.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy & Security</h2>
+      <p>
+        NIFTY Alpha is designed around local credential storage and
+        manual execution. Sensitive broker credentials are handled
+        inside the local application, not on this public website.
+      </p>
+    </section>
+
+    <div class="footer">
+      NIFTY Alpha — Options Decision Support
+    </div>
+  </main>
 </body>
 </html>
